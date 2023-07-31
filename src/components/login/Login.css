@@ -1,0 +1,29 @@
+.login-left-styles {
+  display: flex; /* Convertimos el div en un contenedor flex */
+  justify-content: flex-end; /* Alineamos la imagen hacia el lado derecho */
+  align-items: center; /* Centramos verticalmente los elementos dentro del div */
+  height: 100vh; /* El div ocupa el 100% de la altura del viewport */
+  position: relative; /* Añadimos position relative para que la imagen ocupe el espacio del div */
+}
+
+/* Estilos para la imagen */
+.login-image-style {
+  position: absolute; /* Posicionamos la imagen de manera absoluta */
+  top: 0;
+  right: 0;
+  width: 60%; /* Ajusta el porcentaje para cambiar el tamaño de la imagen */
+  height: 100%; /* Aseguramos que la imagen ocupe toda la altura del div */
+  object-fit: cover; /* Ajustamos la imagen para cubrir el área del contenedor */
+}
+
+/* Estilos para el fondo de color */
+.login-left-styles::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fe4236;
+  z-index: -1; /* Asegura que el fondo de color esté detrás de la imagen */
+}

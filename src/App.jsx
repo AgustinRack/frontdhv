@@ -1,9 +1,13 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import NavScrollExample from "./components/nadvar/Navbar";
+import Login from "./components/login/Login";
 
 function App() {
-  return <NavScrollExample />;
+  return (
+    <Routes>
+      <Route path="login" element={<Login />} />
+    </Routes>
+  );
 }
 
 export default App;
