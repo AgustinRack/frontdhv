@@ -5,12 +5,15 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "./Navbar.css";
+import Logo from "../../assets/Logo.svg";
 
 function NavScrollExample() {
   return (
     <Navbar expand="lg" className="navbar-orange">
       <Container fluid>
-        <Navbar.Brand href="#">HDV INMOBILIARIA</Navbar.Brand>
+        <Navbar.Brand href="#">
+          <img src={Logo} alt="Logo" />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
