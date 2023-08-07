@@ -1,6 +1,6 @@
 /* Estilos para la card */
 .signup-card {
-  margin: 20%;
+  margin: 50px;
   background-color: white;
   width: 60%;
   height: 80%;
@@ -20,6 +20,7 @@
   height: 10%;
   border: 3px solid #fe4236;
   position: relative; /* Añadimos position relative para posicionar el botón */
+  z-index: 1;
 }
 
 .signup-logo-style {
@@ -41,4 +42,19 @@
   &::placeholder {
     color: #123ac8 !important;
   }
+}
+.btn-block {
+  border-radius: 25px !important;
+  color: #fff !important;
+  font-size: 16px !important;
+  padding: 10px 20px !important;
+  margin-top: 10px !important;
+  background-color: #123ac8 !important;
+  border-color: #123ac8 !important;
+}
+.btn-atras {
+  background-color: #123ac8 !important;
+  border-color: #123ac8 !important;
+  margin-top: 20px; /* Agrega el margen que desees aquí */
+  margin-left: 10px;
 }

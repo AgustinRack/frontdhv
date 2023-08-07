@@ -102,4 +102,6 @@
   align-items: center;
   height: 100vh;
   background-color: #fe4236; /* Añade un fondo de color al contenedor */
+  gap: 10px; /* Agrega espacio entre los botones */
+  margin-bottom: 10px;
 }

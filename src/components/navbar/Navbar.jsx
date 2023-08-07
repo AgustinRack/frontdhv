@@ -6,6 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "./Navbar.css";
 import Logo from "../../assets/Logo.svg";
+import { Link } from "react-router-dom";
 
 function NavScrollExample() {
   return (
@@ -21,18 +22,23 @@ function NavScrollExample() {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Venta</Nav.Link>
-            <Nav.Link href="#action2">Alquileres</Nav.Link>
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Another action
-              </NavDropdown.Item>
+            <Nav.Link href="/">Venta</Nav.Link>
+            <Nav.Link href="forSale">Alquileres</Nav.Link>
+            <NavDropdown title="Usuario" id="navbarScrollingDropdown">
+              <Link to="/login">
+                <NavDropdown.Item href="#action3">
+                  Iniciar Sesion
+                </NavDropdown.Item>
+              </Link>
+              <Link to="/signup">
+                <NavDropdown.Item href="#action4">Registrarse</NavDropdown.Item>
+              </Link>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action5">
                 Something else here
               </NavDropdown.Item>
             </NavDropdown>
+
             <Nav.Link href="#">Propiedades</Nav.Link>
           </Nav>
           <Form className="d-flex">

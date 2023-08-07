@@ -2,7 +2,8 @@ import React from "react";
 import loginImage from "../../assets/loginImage.jpg";
 import Logo from "../../assets/Logo.svg";
 import { Button, Col, Form, Row } from "react-bootstrap";
-import "../singup/Signup.css";
+import { Link } from "react-router-dom";
+import "./Signup.css";
 
 function Signup() {
   return (
@@ -138,9 +139,14 @@ function Signup() {
               </Form.Group>
             </Row>
 
-            <Button variant="primary" type="submit">
+            <Button variant="primary" type="submit" className="btn-atras">
               Submit
             </Button>
+            <Link to="/">
+              <Button variant="primary" type="atras" className="btn-atras">
+                Atras
+              </Button>
+            </Link>
           </Form>
         </div>
       </div>

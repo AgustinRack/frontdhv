@@ -41,14 +41,16 @@ function Login() {
             </Form.Group>
 
             <div className="change-password">
-              <Link to="/signup">
+              <Link to="/Signup">
                 <p>Crear cuenta</p>
               </Link>
             </div>
 
-            <Button className="login-button" variant="primary" type="submit">
-              Login
-            </Button>
+            <Button className="login-button">Login</Button>
+
+            <Link to="/">
+              <Button className="login-button">Atras</Button>
+            </Link>
           </Form>
         </div>
       </div>
