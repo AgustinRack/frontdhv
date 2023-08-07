@@ -1,0 +1,107 @@
+.login-left-styles {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.login-image-style {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.login-left-styles::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fe4236;
+}
+
+.login-card-top {
+  background-color: #fe4236;
+  height: 50%;
+  border: 3px solid #fe4236;
+  position: relative;
+}
+
+.fullLogo-style {
+  width: 70%;
+  height: 25%;
+  margin-left: 30%;
+}
+
+.vector-container {
+  position: relative;
+}
+
+.vector-text {
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: white;
+  font-family: sans-serif;
+}
+
+.email-field {
+  padding: 3%;
+}
+
+.password-field {
+  padding: 3%;
+}
+
+.field-style {
+  border-radius: 25px !important;
+  border: 2px solid #123ac8 !important;
+  &::placeholder {
+    color: #123ac8 !important;
+  }
+}
+
+.login-button {
+  position: relative; /* Cambiar el posicionamiento a relativo */
+  margin: auto; /* Aplicar un margen automático en los ejes X e Y para centrar */
+  width: 111px;
+  height: 47px;
+  border-radius: 25px !important;
+  border: 1px solid #123ac8 !important;
+  background-color: white !important;
+  color: #123ac8 !important;
+  display: block; /* Asegurar que el botón sea un bloque para que el margen automático funcione correctamente */
+}
+
+.change-password {
+  padding-left: 3%;
+}
+
+.field-icon {
+  position: relative;
+}
+.login-card {
+  background-color: white; /* Establece un fondo blanco para la card */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Agrega sombra para dar un aspecto más estilizado */
+  max-width: 400px; /* Limita el ancho máximo de la card */
+  z-index: 2;
+}
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fe4236; /* Añade un fondo de color al contenedor */
+  gap: 10px; /* Agrega espacio entre los botones */
+  margin-bottom: 10px;
+}
